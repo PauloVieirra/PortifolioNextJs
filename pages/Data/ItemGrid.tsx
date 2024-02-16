@@ -26,7 +26,7 @@ const ItemGrid: React.FC<ItemGridProps> = ({ items }) => {
 
   return (
     <div className={styles.gridcontainer} onClick={handleshows} >
-      {items.map((item, index) => (
+      {items && items.map((item, index) => (
         <div key={index} className={styles.griditem}>
           <img src={item.icon} alt={`Ícone ${item.nome}`} className={styles.icone} />
         </div>
