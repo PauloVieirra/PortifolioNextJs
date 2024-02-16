@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    flex-direction: column;
+  
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-color: rgba(240, 248, 255, 0.363);
+    border-style:solid;
+}
+.intersecond{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    background-color: rgba(29, 29, 29, 0.075);
+    
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 90%;
+    background-color: rgba(0, 0, 0, 0.822);
+    position: fixed;
+    z-index: 1;
+    inset: 0 0 0 0;
+}
+.btnmodalrun{
+    color: aliceblue;
+    border: none;
+    width: 120px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: rgba(219, 219, 219, 0.151);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.418);
+}
+.buttoncontiner{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+.cardtitle{
+    color: rgb(219, 219, 219);
+    font-size: 24px;
+    font-weight: 600;
+}
+.carddescription{
+    color: rgb(190, 190, 190);
+    font-size: large;
+}
+.cardskills{
+    color: rgb(190, 190, 190);
+    font-size: large;
+}
+.car{
+    color: rgb(190, 190, 190);
+    font-size: large;
+}
