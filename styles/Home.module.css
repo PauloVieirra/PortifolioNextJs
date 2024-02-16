@@ -166,10 +166,9 @@
   text-align: center;
   align-items: center;
   padding: 20px;
-  width: auto;
+  width: 100%;
   z-index: 1;
-  max-width: 220px;
-  height: auto;
+  height: 100%;
   background-color: #303135a1;
   border: none;
   border-radius: 8px;
@@ -182,16 +181,19 @@
  width: 100%;
  flex-direction: column;
  font-size: 18px;
- margin-top: 16px;
  color: #bebebe;
 }
  
 .hi{
   display: flex;
-  position: absolute;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
   font-family: 'Raleway', sans-serif;
+  font-size: 32px;
   color: #e4e4e4fd;
-  z-index: 1;
+  
 }
 
 .contbannerinto{
@@ -223,6 +225,7 @@
   width: auto;
   height: auto;
   border: none;
+  margin: 6px;
   color: #bebebe;
   border-radius: 100px;
   background-color: #8686864b;
@@ -237,8 +240,8 @@
 .contlinebtn{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  width: auto;
   height: auto;
   margin-top: 16px;
 }

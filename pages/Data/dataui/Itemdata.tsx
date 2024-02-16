@@ -56,7 +56,7 @@ const ItemData: React.FC<ItemDataProps> = ({ items }) => {
         <div className={styles.modal}>
             
           <div dangerouslySetInnerHTML={{ __html: selectedItem.embedCode }} />
-          <button className={styles.btnback} onClick={closeModal}>Fechar Modal</button>
+          <button className={styles.btnback} onClick={closeModal}>Close</button>
         </div>
       )}
     </>

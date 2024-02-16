@@ -43,7 +43,7 @@
         <Menu/>
         <main className={styles.main}>
         <div className={styles.banner}>
-          <div className={styles.contbannerinto} >
+          
             <div className={styles.profilecard}>
               <Image
                 src="/images/pjperson.png"
@@ -52,9 +52,11 @@
                 height={140} 
                 />
           <div className={styles.datacardprof}>
-              <a> Paulo Vieira</a>
+              <a style={{margin:'10px'}}> Paulo Vieira</a>
               <a style={{fontSize:'12px'}}>vieirajjr@gmail.com</a>
-          
+            
+                  <div  className={styles.hi}><a>{"Hi, I’m UI Design and Front-end Developer."}</a></div>
+             
             <div className={styles.contlinebtn}>
               <div className={styles.contbutton}>
                 <Image
@@ -95,19 +97,13 @@
                 </div>
                   }
           </div>
+          
           </div>
           </div>
+          
           </div>
-            </div>
-            <div className={styles.contbannerintotext} style={{ maxWidth:'900px'}}>
-            <div className={styles.line}>
-            <div  className={styles.hi}><a>{"Hi, I’m UI Design and Front-end Developer."}</a></div>
-              </div>
-              <div className={styles.line}>
-              </div>
-              <div className={styles.line}>
-              </div>
-            </div>
+          
+            
         </div>
         <div className={styles.contant}>
         <div className={styles.firstsection}>
