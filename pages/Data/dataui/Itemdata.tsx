@@ -32,25 +32,31 @@ const ItemData: React.FC<ItemDataProps> = ({ items }) => {
       <div className={styles.container}>
         {items.map((item, index) => (
           <div key={index} className={styles.item}>
-            <img src={item.icon} alt={`Ícone ${item.nome}`} className={styles.icone} />
+            <div className={styles.interfirst}>
+               <img src={item.icon} alt={`Ícone ${item.nome}`} className={styles.icone} /> 
+              
+            </div>
+           
             <div className={styles.intersecond}>
                 <div className={styles.cardtitle}>{item.nome}</div>
                 <div className={styles.carddescription}>{item.descricao}</div>
                 <div className={styles.cardskills}>{item.skills}</div>
-                <div className={styles.car}>Nielsen Ratings{item.rating}</div>
+                
                 <div className={styles.buttoncontiner}>
                 <button className={styles.btnmodalrun} onClick={() => openModal(item)}>Play prototipo</button>
+                <div className={styles.car}>Nielsen Ratings{item.rating}</div>
                 </div>
-               </div>
+            </div>
+            
           </div>
         ))}
       </div>
 
       {selectedItem && (
         <div className={styles.modal}>
-            <div><Menu/></div>
+            
           <div dangerouslySetInnerHTML={{ __html: selectedItem.embedCode }} />
-          <button style={{width:'50px', height:'30px',position:'absolute', inset:'0,80'}} onClick={closeModal}>Fechar Modal</button>
+          <button className={styles.btnback} onClick={closeModal}>Fechar Modal</button>
         </div>
       )}
     </>
