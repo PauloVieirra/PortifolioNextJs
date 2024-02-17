@@ -108,7 +108,7 @@
         <div className={styles.contant}>
         <div className={styles.firstsection}>
               <div className={styles.title}><a> A little about myself </a></div>
-              <text className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change. Select how I can contribute to your project from the options below.</text>
+              <text className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change.</text>
         </div>
         <div className={styles.contmove}>
         <iframe
@@ -120,8 +120,12 @@
         />
       </div>
         <div className={styles.secondsection}>
+        <div className={styles.firstsection}>
+              <div className={styles.title}><a> how I can help your organization </a></div>
+              <text className={styles.text}> Select how I can contribute to your project from the options below.</text>
+        </div>
             <div className={styles.secondcenter}>
-          <Link href={"/pageux"} style={{width:'20%', height:'200px'}}>
+          <Link href={"/pageux"} style={{width:'100%', height:'200px'}}>
             <div className={styles.card}>
             <Image
                 src="/ux.png" 
@@ -132,8 +136,7 @@
               <p>UX Design </p>
                 </div>
             </Link>
-
-            <Link href={"/pageui"} style={{width:'20%', height:'200px'}}>
+            <Link href={"/pageui"} style={{width:'100%', height:'200px'}}>
             <div className={styles.card}>
             <Image
                 src="/pencil.png" 
@@ -144,9 +147,8 @@
               <p>UI Design </p>
               </div>
               </Link>
-              <Link href={"/pagefrontend"} style={{width:'20%', height:'200px'}}> 
+              <Link href={"/pagefrontend"} style={{width:'100%', height:'200px'}}> 
             <div className={styles.card}>
-            
             <Image
                 src="/code.png" 
                 alt="Descrição da imagem"
@@ -154,10 +156,9 @@
                 height={48} 
               />
               <p>Front-End</p>
-            
               </div>
               </Link>
-              <Link href={"/pagebackend"}style={{width:'20%', height:'200px'}}> 
+              <Link href={"/pagebackend"}style={{width:'100%', height:'200px'}}> 
               <div className={styles.card}> 
               <Image
                 src="/server.png" 
