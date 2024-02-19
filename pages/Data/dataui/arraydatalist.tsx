@@ -66,7 +66,7 @@ const Uis = () => {
 
   return (
     <div style={{display:'flex',width:'100%', alignItems:'center', justifyContent:'center'}}>
-      <ItemData items={itens} />
+      <ItemData items = {itens} />
     </div>
   );
 };
