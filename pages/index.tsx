@@ -5,8 +5,8 @@
   import Link from 'next/link';
   import Certification from './Data/certifications';
   import Menu from './compenents/Menu/Menu';
-  import { Banner } from './compenents/Banner/banner';
-  import { Footer } from './compenents/Footer/footer';
+  import Banner from './compenents/Banner/banner';
+  import Footer from './compenents/Footer/footer';
 
   export default function Home() {
 
