@@ -4,7 +4,7 @@
   import styles from '../styles/Home.module.css'
   import Link from 'next/link';
   import Certification from './Data/certifications';
-  import Menu from './compenents/Menu';
+  import Menu from './compenents/Menu/Menu';
   import { Banner } from './compenents/Banner/banner';
   import { Footer } from './compenents/Footer/footer';
 

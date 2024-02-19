@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from '../styles/Home.module.css';
 import Uis from "./Data/dataui/arraydatalist";
-import Menu from "./compenents/Menu";
+import Menu from "./compenents/Menu/Menu";
 
 
 export default function Uipage(){
