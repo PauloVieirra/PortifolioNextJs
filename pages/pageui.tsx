@@ -19,7 +19,7 @@ export default function Uipage(){
     <div className={styles.main}>
     <div className={styles.firstsection} style={{paddingTop:'30px'}}>
               <div className={styles.title}><a> Ui Design </a></div>
-              <text className={styles.text}>Interface prototyping is very exciting, here we have some projects that I have been updating, all created with Figma.</text>
+              <div className={styles.text}>Interface prototyping is very exciting, here we have some projects that I have been updating, all created with Figma.</div>
     </div>
      <Uis/>
     </div>

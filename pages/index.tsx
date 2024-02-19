@@ -30,7 +30,7 @@
           <section className={styles.contsesion}>
           <div className={styles.firstsection}>
           <div className={styles.title}><a> A little about myself </a></div>
-          <text className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change.</text>
+          <div className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change.</div>
           </div>
           <div className={styles.contmove}>
           <iframe
@@ -46,7 +46,7 @@
         <section className={styles.secondsection}>
         <div className={styles.firstsection}>
               <div className={styles.title}><a> how I can help your organization </a></div>
-              <text className={styles.text}> Select how I can contribute to your project from the options below.</text>
+              <div className={styles.text}> Select how I can contribute to your project from the options below.</div>
         </div>
             <div className={styles.gridcontainer}>
           <Link href={"/pageux"} style={{width:'100%', height:'200px'}}>
@@ -98,7 +98,7 @@
         <section className={styles.secondsection}>
         <div className={styles.firstsection} style={{paddingTop:'20px'}}>
               <div className={styles.title}><a>Some courses and training</a></div>
-              <text className={styles.text}>Check out some course and training certificates that help me develop an analytical and creative vision for projects.</text>
+              <div className={styles.text}>Check out some course and training certificates that help me develop an analytical and creative vision for projects.</div>
         </div>
         <div className={styles.certificationsGrid}>
             <Certification/>
