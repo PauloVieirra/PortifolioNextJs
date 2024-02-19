@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './style.module.css';
-import Menu from '../../compenents/Menu';
+import Menu from '../../compenents/Menu/Menu';
 
 type Item = {
   nome: string;
@@ -8,7 +8,7 @@ type Item = {
   icon: string;
   skills: string;
   embedCode: string;
-  rating: string;
+  rating: number;
 };
 
 type ItemDataProps = {
