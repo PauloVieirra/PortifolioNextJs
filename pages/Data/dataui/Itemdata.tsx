@@ -8,7 +8,7 @@ type Item = {
   icon: string;
   skills: string;
   embedCode: string;
-  rating: number;
+  rating: string;
 };
 
 type ItemDataProps = {
