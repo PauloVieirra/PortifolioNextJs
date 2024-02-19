@@ -26,25 +26,29 @@
         <Banner/>
 
         <div className={styles.contant}>
-        <div className={styles.firstsection}>
-              <div className={styles.title}><a> A little about myself </a></div>
-              <text className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change.</text>
-        </div>
-        <div className={styles.contmove}>
-        <iframe
-          width="640"
-          height="360"
-          src="https://www.youtube.com/embed/jX_CYgOKodg"
-          title="YouTube Video Player"
-          allowFullScreen
-        />
-      </div>
-        <div className={styles.secondsection}>
+          
+          <section className={styles.contsesion}>
+          <div className={styles.firstsection}>
+          <div className={styles.title}><a> A little about myself </a></div>
+          <text className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change.</text>
+          </div>
+          <div className={styles.contmove}>
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/jX_CYgOKodg"
+            title="YouTube Video Player"
+            allowFullScreen/>
+          </div>
+
+        </section>
+        
+        <section className={styles.secondsection}>
         <div className={styles.firstsection}>
               <div className={styles.title}><a> how I can help your organization </a></div>
               <text className={styles.text}> Select how I can contribute to your project from the options below.</text>
         </div>
-            <div className={styles.secondcenter}>
+            <div className={styles.gridcontainer}>
           <Link href={"/pageux"} style={{width:'100%', height:'200px'}}>
             <div className={styles.card}>
             <Image
@@ -89,8 +93,9 @@
               <p>Back-End</p>
             </div> </Link>
         </div>
+        </section>
         </div>
-        </div>
+        <section className={styles.secondsection}>
         <div className={styles.firstsection} style={{paddingTop:'20px'}}>
               <div className={styles.title}><a>Some courses and training</a></div>
               <text className={styles.text}>Check out some course and training certificates that help me develop an analytical and creative vision for projects.</text>
@@ -101,6 +106,7 @@
         <div className={styles.btnseeall}> See all! </div> 
           </div> 
         </div>
+        </section>
         </main>
        <Footer/>
         

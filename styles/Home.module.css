@@ -247,10 +247,9 @@
   display: flex;
   width: 100%;
   height: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .contant{
   display: flex;
@@ -258,8 +257,6 @@
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #22222217;
 }
 .firstsection{
@@ -267,18 +264,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  margin-bottom: 10px;
 }
 .secondsection{
   display: flex;
   width: 100%;
+  max-width: 1240px;
+  min-height: 548px;
   height: auto;
   flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 40px;
   justify-content: center;
   align-items: center;
   background-color: #22222259;
+}
+.contsesion{
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  height: 548px;
+  flex-direction: column;
+  max-width: 1240px;
+  min-height: 548px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
 }
 .secondcenter{
   display: grid;
@@ -287,6 +296,14 @@
   flex-direction: column;
   width: auto;
   max-width: 1124px;
+}
+.gridcontainer {
+  display: grid;
+  width: 100%;
+  max-width: 1024px;
+  grid-template-columns: repeat(4, 1fr); /* Alterado para 1fr para ocupar a largura total em telas menores */
+  gap: 16px;
+  position: relative;
 }
 .text{
   display: flex;
@@ -350,7 +367,7 @@
    display: flex;
  }
 
- 
+
 
 }
 
@@ -399,6 +416,14 @@
     color: #bebebe;
    }
     
+   .gridcontainer {
+    display: grid;
+    width: 100%;
+    max-width: 1024px;
+    grid-template-columns: repeat(3, 1fr); /* Alterado para 1fr para ocupar a largura total em telas menores */
+    gap: 16px;
+    position: relative;
+  }
   
 
 } 
@@ -413,6 +438,17 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .gridcontainer {
+    display: grid;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    max-width: 1024px;
+    grid-template-columns: repeat(2, 1fr); /* Alterado para 1fr para ocupar a largura total em telas menores */
+    gap: 16px;
+    background-color: #0070f3;
   }
  
 }
