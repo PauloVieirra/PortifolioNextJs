@@ -26,7 +26,7 @@ export default function Menu() {
             Home
           </div>
         </Link>
-        <Link href={'../Front/pagefront'}>
+        <Link href={'/Front/pagefront'}>
           <div
             className={`${styles.btnsmenus} ${isButtonSelected('About')}`}
             onClick={() => handleButtonClick('About')}
