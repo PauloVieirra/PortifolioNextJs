@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './style.module.css';
-import Menu from '../../compenents/Menu/Menu';
 
 type Item = {
   nome: string;
@@ -12,11 +11,10 @@ type Item = {
 };
 
 type ItemDataProps = {
-  items: Item[];
+  items?: Item[]; // Torna items opcional para lidar com a possibilidade de ser undefined
 };
 
-const ItemData: React.FC<ItemDataProps> = ({ items }) => {
-
+const ItemData: React.FC<ItemDataProps> = ({ items = [] }) => {
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
 
   const openModal = (item: Item) => {
@@ -34,7 +32,6 @@ const ItemData: React.FC<ItemDataProps> = ({ items }) => {
           <div key={index} className={styles.item}>
             <div className={styles.interfirst}>
                <img src={item.icon} alt={`Ícone ${item.nome}`} className={styles.icone} /> 
-              
             </div>
            
             <div className={styles.intersecond}>
@@ -43,11 +40,10 @@ const ItemData: React.FC<ItemDataProps> = ({ items }) => {
                 <div className={styles.cardskills}>{item.skills}</div>
                 
                 <div className={styles.buttoncontiner}>
-                <button className={styles.btnmodalrun} onClick={() => openModal(item)}>Play prototipo</button>
-                <div className={styles.car}>Nielsen Ratings{item.rating}</div>
+                  <button className={styles.btnmodalrun} onClick={() => openModal(item)}>Play protótipo</button>
+                  <div className={styles.car}>Nielsen Ratings {item.rating}</div>
                 </div>
             </div>
-            
           </div>
         ))}
       </div>
