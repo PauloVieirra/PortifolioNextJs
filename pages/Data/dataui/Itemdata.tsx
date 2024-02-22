@@ -36,12 +36,14 @@ const ItemData: React.FC<ItemDataProps> = ({ items = [] }) => {
            
             <div className={styles.intersecond}>
                 <div className={styles.cardtitle}>{item.nome}</div>
-                <div className={styles.carddescription}>{item.descricao}</div>
+                <div className={styles.carddescription}>
+                 {item.descricao}
+                </div>
+                <div className={styles.intersecondtitle}>Skills used</div>
                 <div className={styles.cardskills}>{item.skills}</div>
-                
                 <div className={styles.buttoncontiner}>
                   <button className={styles.btnmodalrun} onClick={() => openModal(item)}>Play protótipo</button>
-                  <div className={styles.car}>Nielsen Ratings {item.rating}</div>
+                  <div className={styles.rating}>Nielsen Ratings {item.rating}</div>
                 </div>
             </div>
           </div>
