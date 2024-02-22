@@ -1,6 +1,6 @@
 import next from "next";
 import Link from "next/link";
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 export default function Uxpage(){
     return (

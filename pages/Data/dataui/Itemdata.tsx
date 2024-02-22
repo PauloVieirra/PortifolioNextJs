@@ -11,7 +11,7 @@ type Item = {
 };
 
 type ItemDataProps = {
-  items?: Item[]; // Torna items opcional para lidar com a possibilidade de ser undefined
+  items?: Item[];
 };
 
 const ItemData: React.FC<ItemDataProps> = ({ items = [] }) => {
@@ -47,7 +47,6 @@ const ItemData: React.FC<ItemDataProps> = ({ items = [] }) => {
           </div>
         ))}
       </div>
-
       {selectedItem && (
         <div className={styles.modal}>
           <div dangerouslySetInnerHTML={{ __html: selectedItem.embedCode }} />

@@ -18,7 +18,7 @@ export default function Menu() {
   return (
     <div className={styles.container}>
       <div className={styles.menudesktop}>
-        <Link href={'./'}>
+        <Link href={'/'}>
           <div
             className={`${styles.btnsmenus} ${isButtonSelected('Home')}`}
             onClick={() => handleButtonClick('Home')}

@@ -1,5 +1,4 @@
-// pages/index.js
-
+//pages/index.js
 import React from 'react';
 import ItemData from './Itemdata';
 import styles from '../styles/ItemGrid.module.css';

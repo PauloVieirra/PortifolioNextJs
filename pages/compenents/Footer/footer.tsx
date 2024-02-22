@@ -10,7 +10,7 @@ export default function Footer(){
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{' '}
+           © 2024 Paulo Vieira.
             <span className={styles.logo}>
             </span>
           </a>
