@@ -18,7 +18,7 @@ const  Menu = () => {
   return (
     <div className={styles.container}>
       <div className={styles.menudesktop}>
-        <Link href={'/'}>
+        <Link href={'/'}  className={styles.linkstyle}>
           <div
             className={`${styles.btnsmenus} ${isButtonSelected('Home')}`}
             onClick={() => handleButtonClick('Home')}
@@ -26,7 +26,7 @@ const  Menu = () => {
             Home
           </div>
         </Link>
-        <Link href={'/Front/pagefront'}>
+        <Link href={'./About'}  className={styles.linkstyle}>
           <div
             className={`${styles.btnsmenus} ${isButtonSelected('About')}`}
             onClick={() => handleButtonClick('About')}
@@ -34,6 +34,23 @@ const  Menu = () => {
             About
           </div>
         </Link>
+        <Link href={'./Resume'}  className={styles.linkstyle}>
+          <div
+            className={`${styles.btnsmenus} ${isButtonSelected('About')}`}
+            onClick={() => handleButtonClick('About')}
+          >
+            Resume
+          </div>
+        </Link>
+        <Link href={'./Tv'} className={styles.linkstyle}>
+          <div
+            className={`${styles.btnsmenus} ${isButtonSelected('About')}`}
+            onClick={() => handleButtonClick('About')}
+          >
+            TV
+          </div>
+        </Link>
+
       </div>
     </div>
   );
@@ -42,7 +59,21 @@ const  Menu = () => {
 const Navbar = () => {
   return(
       <div className={styles.navbar}>
-        123
+        <Link href={'/'}  className={styles.linkstyle}>
+        <div className={styles.btnnav}> Home </div>
+        </Link>
+        <Link href={'./About'}  className={styles.linkstyle}>
+        <div className={styles.btnnav}> About </div>
+        </Link>
+        <Link href={'./Resume'}  className={styles.linkstyle}>
+        <div className={styles.btnnav}> Resume </div>
+        </Link>
+         <Link href={"./Tv"}  className={styles.linkstyle}>
+        <div className={styles.btnnav}>
+            TV 
+        </div>
+        </Link>
+        
       </div>
   );
 }
