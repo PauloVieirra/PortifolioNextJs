@@ -1,0 +1,82 @@
+.banner {
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-image: url('/montain.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .profilecard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background-color: #303135a1;
+    border: none;
+    color: #e6e6e68f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.418);
+  }
+
+  .datacardprof{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 18px;
+    color: #bebebe;
+   }
+
+   .contlinebtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 16px;
+  }
+
+  .contbutton{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px;
+    width: auto;
+    height: auto;
+    border: none;
+    margin: 6px;
+    color: #bebebe;
+    border-radius: 100px;
+    background-color: #8686864b;
+    font-size: 18px;
+    box-shadow: #22222259 0 4px 6px  -5px;
+  }
+
+  .hi{
+    color: aliceblue;
+  }
+
+  @media (min-width:768px){
+    .banner {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        background-image: url('/montain.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+    .hi{
+      font-size: 28px;
+   }
+  }
+
+
+  

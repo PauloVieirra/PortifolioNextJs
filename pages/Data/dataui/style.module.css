@@ -146,25 +146,25 @@
 
 
 
-/* Estilo para telas pequenas (até 600px) */
+/* Estilo para telas pequenas (até 600px)*/
 @media only screen and (min-width: 600px)  and (max-width: 819px){
     .container {
-        grid-template-columns: repeat(2, 1fr); /* Uma coluna em telas pequenas */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Estilo para telas médias (de 601px a 900px) */
+/* Estilo para telas médias (de 820px a 1024px)*/
 @media only screen and (min-width: 820px) and (max-width: 1024px) {
     .container {
-        grid-template-columns: repeat(3, 1fr); /* Duas colunas em telas médias */
+        grid-template-columns: repeat(3, 1fr); 
         gap: 10px;
     }
 }
 
-/* Estilo para telas grandes (acima de 901px) */
+/* Estilo para telas grandes (acima de 1024px)*/
 @media only screen and (min-width: 1025px) {
     .container {
-        grid-template-columns: repeat(4, 1fr); /* Três colunas em telas grandes */
+        grid-template-columns: repeat(4, 1fr); 
         gap: 10px;
     }
 }

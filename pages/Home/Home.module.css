@@ -33,16 +33,10 @@
   text-decoration: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: none;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -72,7 +66,6 @@
   justify-content: center;
   display: grid;
   width: 90%;
-  background-color: #0070f3;
   grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
   gap: 16px;
   flex-wrap: wrap;
@@ -130,34 +123,6 @@
   padding-left: 35px;
   padding-right: 35px;
 }
-.mobilemenu{
-
-}
-
-.desktopmenu{
-  display: none;
-}
-
-.banner {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 360px;
-  background-image: url('/montain.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-
-.banner::before {
-  content: '';
-  z-index: 0;
-  position: absolute;
-  inset: 0 0 0 0;
-  background: rgba(0, 0, 0, 0.637); 
-}
-
 
 .profilecard{
   display: flex;
@@ -270,12 +235,11 @@
 .contsesion{
   display: flex;
   width: 100%;
+  max-width: 1240px; 
   max-width: 1240px;
-  height: 548px;
+  height: auto;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 1240px;
-  min-height: 548px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -373,19 +337,55 @@
   box-shadow: #22222259 0 4px 6px  -5px;
 }
 
+.player{
+  width: 640px;
+  height:360px;
+  margin-top: 20px;
+}
+
+.line{
+  display: flex;
+  justify-content: center;
+  max-width: 1240px;
+  margin-top: 30px;
+}
+
+.btnlearnmore{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100px;
+ padding: 10px;
+ border-radius: 8px;
+ background-color: #f7f7f723;
+ color: #e7e7e7;
+ font-size:  14px;
+ font-weight: 600;
+}
+
+.btnclose{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #2e2e2ed0;
+  color: #e7e7e7;
+  font-size:  14px;
+  font-weight: 600;
+  position:absolute;
+  z-index: 10;
+  top: 100%;
+ }
 
 
-@media (min-width:768px){
-  .mobilemenu{
-    display: none;
+
+@media (min-width:400px){
+  .contsesion{
+    display: flex;
  }
  
- .desktopmenu{
-   display: flex;
- }
-
-
-
 }
 
 @media (max-width:768px){
@@ -446,11 +446,6 @@
 } 
 
 
-
-
-
-
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -465,7 +460,12 @@
     max-width: 1024px;
     grid-template-columns: repeat(2, 1fr); /* Alterado para 1fr para ocupar a largura total em telas menores */
     gap: 16px;
-    background-color: #0070f3;
+  }
+
+  .player{
+    width: 90%;
+    max-width: 1024px;
+    height:300px
   }
  
 }

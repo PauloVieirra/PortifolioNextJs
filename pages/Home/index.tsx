@@ -1,17 +1,24 @@
-  import { useState, useEffect } from 'react';
+  import { useState, useEffect, MouseEventHandler } from 'react';
   import Head from 'next/head'
   import Image from 'next/image'
-  import styles from '/styles/Home.module.css';
+  import styles from './Home.module.css';
   import globalstyle from '../../styles/global.module.css';
   import Link from 'next/link';
   import Certification from '../Data/certifications';
   import Menu from '../compenents/Menu/Menu';
+  import { Navbar } from '../compenents/Menu/Menu';
   import Banner from '../compenents/Banner/banner';
   import Footer from '../compenents/Footer/footer';
+
 
   export default function Home() {
 
     const [btnrotulo, setBetnRotulo] = useState ('');
+    const [handleviewmore, setHandleViewMore] = useState(false);
+
+    const viewmore : MouseEventHandler<HTMLDivElement> = (event) => {
+      setHandleViewMore ((prevValue) => !prevValue);
+    };
 
   
     return (
@@ -24,19 +31,24 @@
         <Menu/>
         <main className={globalstyle.main}>
         <Banner/>
+
         <section className={styles.contsesion}>
           
           <div className={styles.firstsection}>
           <div className={styles.title}><a> A little about myself </a></div>
           <div className={styles.text}>Owner of a very creative mind, quick to learn, analytical and hyperfocused on my goals, I love technology and its ability to promote change.</div>
           </div>
+          <div className={styles.line}>
+            <div className={styles.btnlearnmore} onClick={viewmore}> {handleviewmore ? 'Close' : 'More'}</div>
+          </div>
           <div className={styles.contmove}>
-          <iframe
-            width="640"
-            height="360"
+          { handleviewmore === true &&
+           <iframe
             src="https://www.youtube.com/embed/jX_CYgOKodg"
             title="YouTube Video Player"
+            className={styles.player}
             allowFullScreen/>
+          }
           </div>
 
         </section>
@@ -110,6 +122,7 @@
           </div> 
         </main>
        <Footer/>
+       <Navbar/>
       </div>
     )
   }

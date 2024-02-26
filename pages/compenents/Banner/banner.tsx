@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/Home.module.css';
+import styles from './styles.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function Banner(){
 
     const [btnrotulo, setBetnRotulo] = useState ('');
+    
     return(
         <div className={styles.banner}>
           

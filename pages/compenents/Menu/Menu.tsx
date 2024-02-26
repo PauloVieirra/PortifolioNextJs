@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 type ButtonName = 'Home' | 'About';
 
-export default function Menu() {
+const  Menu = () => {
   const [selectedButton, setSelectedButton] = useState<ButtonName | null>(null);
 
   const handleButtonClick = (buttonName: ButtonName) => {
@@ -35,8 +35,27 @@ export default function Menu() {
           </div>
         </Link>
       </div>
-      <div className={styles.menumobile}>Mobile Menu</div>
-      <div className={styles.navbar}>NavBar</div>
     </div>
   );
 }
+
+const Navbar = () => {
+  return(
+      <div className={styles.navbar}>
+        123
+      </div>
+  );
+}
+
+const Guias = () => {
+  return(
+    <div>
+     <Menu/>
+     <Navbar/>
+    </div>
+  );
+}
+
+export {Menu, Navbar}
+
+export default Guias;
