@@ -9,6 +9,14 @@
     background-size: cover;
     background-position: center;
   }
+ 
+  .banner::before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(18deg, rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.320));
+  }
 
   .profilecard{
     display: flex;
@@ -55,11 +63,26 @@
     border-radius: 100px;
     background-color: #8686864b;
     font-size: 18px;
-    box-shadow: #22222259 0 4px 6px  -5px;
+    box-shadow: #22222259 0 4px 6px -5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contbutton:hover{
+    background-color: #b6b5b54b;
   }
 
   .hi{
     color: aliceblue;
+    margin-top: 1rem;
+  }
+
+  .textname{
+    color: rgb(230, 236, 241);
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  .textemail{
+    color: rgba(230, 236, 241, 0.678);
+    font-size: 1rem;
   }
 
   @media (min-width:768px){
@@ -74,7 +97,7 @@
         background-position: center;
       }
     .hi{
-      font-size: 28px;
+      font-size: 1.6rem;
    }
   }
 

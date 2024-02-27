@@ -19,9 +19,9 @@ export default function Banner(){
                 height={140} 
                 />
           <div className={styles.datacardprof}>
-              <a style={{margin:'10px'}}> Paulo Vieira</a>
-              <a style={{fontSize:'12px'}}>vieirajjr@gmail.com</a>
-            
+              <a className={styles.textname}> Paulo Vieira</a>
+              <a className={styles.textemail} >vieirajjr@gmail.com</a>
+           
                   <div  className={styles.hi}><a>{"Hi, I’m UI Design and Front-end Developer."}</a></div>
              
             <div className={styles.contlinebtn}>

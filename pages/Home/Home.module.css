@@ -356,11 +356,21 @@
  justify-content: center;
  width: 100px;
  padding: 10px;
+ box-sizing: border-box;
  border-radius: 8px;
  background-color: #f7f7f723;
  color: #e7e7e7;
  font-size:  14px;
  font-weight: 600;
+ transition:  0.8s ease-in-out;
+ cursor: pointer;
+}
+
+.btnlearnmore:hover{
+ border-width: 1px;
+ border-color: #adadad;
+ border-style:solid;
+ cursor: pointer;
 }
 
 .btnclose{
@@ -370,6 +380,7 @@
   width: 100px;
   padding: 10px;
   border-radius: 8px;
+  box-sizing: border-box;
   background-color: #2e2e2ed0;
   color: #e7e7e7;
   font-size:  14px;
@@ -378,8 +389,6 @@
   z-index: 10;
   top: 100%;
  }
-
-
 
 @media (min-width:400px){
   .contsesion{
@@ -444,7 +453,6 @@
   
 
 } 
-
 
 @media (max-width: 600px) {
   .grid {

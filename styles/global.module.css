@@ -3,7 +3,7 @@
     overflow: hidden;
     background-color: #34353A;
   }
-  
+
   .main {
     min-height: calc(100vh - 130px);
     flex: 1;

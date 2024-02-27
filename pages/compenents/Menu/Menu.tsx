@@ -18,7 +18,7 @@ const  Menu = () => {
   return (
     <div className={styles.container}>
       <div className={styles.menudesktop}>
-        <Link href={'/'}  className={styles.linkstyle}>
+        <Link href={'./Home'}  className={styles.linkstyle}>
           <div
             className={`${styles.btnsmenus} ${isButtonSelected('Home')}`}
             onClick={() => handleButtonClick('Home')}
@@ -59,7 +59,7 @@ const  Menu = () => {
 const Navbar = () => {
   return(
       <div className={styles.navbar}>
-        <Link href={'/'}  className={styles.linkstyle}>
+        <Link href={'./Home'}  className={styles.linkstyle}>
         <div className={styles.btnnav}> Home </div>
         </Link>
         <Link href={'./About'}  className={styles.linkstyle}>

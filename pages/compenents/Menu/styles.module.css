@@ -64,7 +64,7 @@
     height: 100%;
 }
 
-@media  screen and (min-width: 769px){
+@media  screen and (min-width: 720px){
     .container{
     display: flex;
     flex-direction: row;
