@@ -5,6 +5,7 @@ import styles  from './style.module.css';
 import { Menu } from "../compenents/Menu/Menu";
 import { Navbar } from "../compenents/Menu/Menu";
 import Footer from "../compenents/Footer/footer";
+import { Session } from "inspector";
 
 export default function Channel () {  
     return(
@@ -16,12 +17,18 @@ export default function Channel () {
           </Head>
           <Menu/>
           <main className={globalstyle.main}>
-           <div className={styles.container}>
-            
+           <section className={styles.container}>
+             <div className={styles.conttopmedia}>
+                
+                <div className={styles.containerseach}>
+                <input className={styles.contsearch}/>
+                <div className={styles.btnseach}> Buscar </div>
+                </div>
+             </div>
               
-   
+               
   
-           </div>
+           </section>
           </main>
           <Footer/>
           <Navbar/>

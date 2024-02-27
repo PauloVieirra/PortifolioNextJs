@@ -93,7 +93,7 @@
               <p>Front-End</p>
               </div>
           </Link>
-              <Link href={"./Backend"}style={{width:'100%', height:'200px'}}> 
+              <Link href={"./Mobile"}style={{width:'100%', height:'200px'}}> 
               <div className={styles.card}> 
               <Image
                 src="/server.png" 
@@ -101,7 +101,7 @@
                 width={48} 
                 height={48} 
               />
-              <p>Back-End</p>
+              <p>Mobile</p>
             </div> </Link>
         </div>
         </section>

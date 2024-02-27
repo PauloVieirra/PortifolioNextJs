@@ -21,7 +21,7 @@ const Uis = () => {
       descricao: '',
       icon: '/images/imgUis/streaming.png',
       skills: ' Information Design, Visual Hierarchy, Color Palette and Color Theory, Usability Testing, Storytelling.',
-      embedCode:'<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv1ey3IIMcpssM4tqAQwFe0%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D49-115%26viewport%3D1150%252C854%252C0.71%26t%3DRgDL3ziYKId5k6sy-1%26scaling%3Dmin-zoom%26mode%3Ddesign" allowfullscreen></iframe>',
+      embedCode:'<iframe  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv1ey3IIMcpssM4tqAQwFe0%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D49-115%26viewport%3D1150%252C854%252C0.71%26t%3DRgDL3ziYKId5k6sy-1%26scaling%3Dmin-zoom%26mode%3Ddesign" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>',
       rating: "7.6",
     },
     {   

@@ -7,7 +7,6 @@
     height: auto;
     flex-direction: column;
 }
-
 .item {
     display: flex;
     flex-direction: column;
@@ -21,23 +20,19 @@
     border-bottom: 2px;
     border-color: rgba(170, 170, 170, 0.11);
     border-style: solid;
-    background-color: rgba(131, 131, 131, 0.1); /* Cor de fundo com transparência */
-    transition: background-color 0.75s ease, box-shadow 0.75s ease; /* Adicionando transição para suavizar as alterações */
-
-    /* Adicionando sombra para criar o efeito de vidro */
+    background-color: rgba(131, 131, 131, 0.1); 
+    transition: background-color 0.75s ease, box-shadow 0.75s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
-/* Adicione uma regra hover para alterar a cor de fundo ao passar o mouse */
 .item:hover{
     background-color: rgba(48, 48, 48, 0.541);
 }
-
 .interfirst{
     display: flex;
     padding: 4px;
     height: 200px;
 }
+
 .icone{
     position: relative;
     z-index: 0;
@@ -104,7 +99,6 @@
 }
 
 .btnmodalrun{
-    
     color: aliceblue;
     border: none;
     width: 120px;
@@ -148,9 +142,6 @@
     width: 100%;
     min-height: 100vh;
 }
-
-
-
 
 /* Estilo para telas pequenas (até 600px)*/
 @media only screen and (min-width: 600px)  and (max-width: 819px){
