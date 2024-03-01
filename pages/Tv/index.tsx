@@ -11,6 +11,7 @@ type Item = {
   title: string;
   videoUrl: string;
   image: string;
+  cover: string;
 }
 
 const Channel = () => {
@@ -18,13 +19,21 @@ const Channel = () => {
     { id: 1, 
       title: 'Filme 1', 
       videoUrl: 'https://www.youtube.com/watch?v=WYeAUpvWeI8', 
-      image:'https://m.media-amazon.com/images/I/61zzj8A+ZGL._AC_UF1000,1000_QL80_.jpg'},
-    { id: 2, 
+      image:'https://m.media-amazon.com/images/I/61zzj8A+ZGL._AC_UF1000,1000_QL80_.jpg',
+      cover: '../../public/cover.jpg',
+    },
+      { id: 2, 
       title: 'Filme 2', 
       videoUrl: 'https://www.youtube.com/watch?v=F1B9Fk_SgI0&list=RDMMF1B9Fk_SgI0&start_radio=1', 
-      image:'ee'  },
-    { id: 3, title: 'Filme 3', videoUrl: 'URL_VIDEO_3',
-       image:'123'
+      image:'ee',
+      cover: '../../public/cover.jpg',
+    },
+    { id: 3, 
+      title: 'Filme 3', 
+      videoUrl: 'URL_VIDEO_3',
+      image:'123',
+      cover:'../../public/cover.jpg',
+      
       },
     // Adicione mais filmes conforme necessário
   ]);
@@ -32,6 +41,7 @@ const Channel = () => {
   const [selectedMovie, setSelectedMovie] = useState<Item | null>(null);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const hoverMediaRef = useRef<HTMLDivElement | null>(null);
 
   const handleMovieClick = (movie: Item) => {
     setSelectedMovie(movie);
@@ -72,7 +82,22 @@ const Channel = () => {
       setSelectedMovie(null);  // Limpa o estado do vídeo
     }
   };
-  
+
+  const handleMouseEnter = (movie: Item) => {
+    if (hoverMediaRef.current) {
+      hoverMediaRef.current.innerHTML = `
+        <img src="${movie.cover}" alt="${movie.title}" />
+        <h3>${movie.title}</h3>
+        <p>Breve resumo do filme...</p>
+      `;
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (hoverMediaRef.current) {
+      hoverMediaRef.current.innerHTML = ''; // Limpa o conteúdo ao sair do hover
+    }
+  };
 
   return (
     <div className={globalstyle.container}>
@@ -86,16 +111,17 @@ const Channel = () => {
 
       <main className={globalstyle.main}>
         <section className={styles.container}>
-          <div className={styles.conttopmedia}>
-            <div className={styles.containerseach}>
-              <input className={styles.contsearch} />
-              <div className={styles.btnseach}>Buscar</div>
-            </div>
-          </div>
+          <div className={styles.hovermedia} ref={hoverMediaRef}></div>
           <div>
             <div className={styles.cardlist}>
               {!selectedMovie && movies.map((movie) => (
-                <div key={movie.id} onClick={() => handleMovieClick(movie)} className={styles.card}>
+                <div 
+                  key={movie.id} 
+                  onClick={() => handleMovieClick(movie)} 
+                  onMouseEnter={() => handleMouseEnter(movie)}
+                  onMouseLeave={handleMouseLeave}
+                  className={styles.card}
+                >
                   <img src={movie.image} className={styles.imgcover}/>
                   {movie.title}
                 </div>
@@ -104,9 +130,10 @@ const Channel = () => {
 
             {selectedMovie && (
               <div className={styles.movieplay}>
-                <div onClick={closePlayer} className={styles.btnclose}>fechar</div>
-               
-                <video id="videoPlayer" ref={videoRef} controls width="100%" height="100%">
+                {selectedMovie && 
+                  <div onClick={closePlayer} className={styles.btnclose}>Fechar</div>
+                }
+                <video id="videoPlayer" ref={videoRef} controls autoPlay width="76%" height="84%">
                   <source src={selectedMovie.videoUrl} type="video/mp4" />
                   Seu navegador não suporta o elemento de vídeo.
                 </video>
