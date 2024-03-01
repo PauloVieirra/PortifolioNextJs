@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    position: absolute;
+    inset: o,o,o,o;
+    width: 80px;
+    height: calc(100% - 96px);
+    background-color: aliceblue;
+}

@@ -15,6 +15,7 @@ type ItemDataProps = {
 };
 
 const ItemData: React.FC<ItemDataProps> = ({ items = [] }) => {
+  
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
 
   const openModal = (item: Item) => {

@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: calc(100vh - 48px);
     background-color: #34353A;
@@ -10,6 +11,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 46px;
     width: 100%;
     height: auto;
     max-height: 80px;
@@ -42,6 +46,40 @@
     padding: 6px;
     align-items: center;
     justify-content: center;
+}
+.movieplay{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    top: 46px;
+    bottom: 46px;
+    width: 100%;
+    min-height: calc(100% - 96px);
+}
+.cardlist{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 56px;
+    left: 50%;
+}
+.card{
+    width: 100px;
+    height: 140px;
+    padding: 2px;
+}
+.btnclose{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    right: 40px;
+    bottom: 40px;
+}
+.imgcover{
+    width: 80px;
 }
 
 
