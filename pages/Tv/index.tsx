@@ -20,7 +20,7 @@ const Channel = () => {
       title: 'Filme 1', 
       videoUrl: 'https://www.youtube.com/watch?v=WYeAUpvWeI8', 
       image:'https://m.media-amazon.com/images/I/61zzj8A+ZGL._AC_UF1000,1000_QL80_.jpg',
-      cover: '../../public/cover.jpg',
+      cover: './cover.jpg',
     },
       { id: 2, 
       title: 'Filme 2', 
@@ -111,7 +111,18 @@ const Channel = () => {
 
       <main className={globalstyle.main}>
         <section className={styles.container}>
-          <div className={styles.hovermedia} ref={hoverMediaRef}></div>
+          <div className={styles.hovermedia} ref={hoverMediaRef}>
+            {selectedMovie && (
+              <div className={styles.contmediahome}>
+                <div>
+                <img src={selectedMovie.cover} alt={selectedMovie.title} />
+                </div>
+                
+                <h3>{selectedMovie.title}</h3>
+                <p>Breve resumo do filme...</p>
+              </div>
+            )}
+          </div>
           <div>
             <div className={styles.cardlist}>
               {!selectedMovie && movies.map((movie) => (
@@ -122,7 +133,7 @@ const Channel = () => {
                   onMouseLeave={handleMouseLeave}
                   className={styles.card}
                 >
-                  <img src={movie.image} className={styles.imgcover}/>
+                  <img src={movie.image} className={styles.imgcover} alt={movie.title} />
                   {movie.title}
                 </div>
               ))}
