@@ -52,7 +52,7 @@ const Certification = () => {
       {
         nome: 'Item 1',
         descricao: 'Descrição do Item 1',
-        icon: './images/centradoux.png',
+        icon: './images/centradoUX.png',
         imagemFullScreen: './images/wireframe.png',
         url: 'https://www.exemplo.com/item1',
       },
