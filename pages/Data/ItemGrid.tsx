@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../styles/Items.module.css';
 import { useState } from 'react';
+import Link from 'next/link';
 
 type Item = {
   nome: string;
@@ -25,11 +26,13 @@ const ItemGrid: React.FC<ItemGridProps> = ({ items }) => {
       };
 
   return (
-    <div className={styles.gridcontainer} onClick={handleshows} >
+    <div className={styles.gridcontainer} >
       {items && items.map((item, index) => (
+      <Link href={item.url} target='Blank'>
         <div key={index} className={styles.griditem}>
           <img src={item.icon} alt={`Ícone ${item.nome}`} className={styles.icone} />
         </div>
+       </Link>
       ))}
     </div>
   );
