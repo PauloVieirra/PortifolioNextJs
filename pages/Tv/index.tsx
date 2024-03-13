@@ -5,7 +5,6 @@ import Head from "next/head";
 import styles from './style.module.css';
 import { Menu, Navbar } from "../compenents/Menu/Menu";
 import Footer from "../compenents/Footer/footer";
-import Catalogo from "../Channel";
 
 type Item = {
   id: number;
