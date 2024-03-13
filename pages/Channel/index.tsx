@@ -1,7 +1,8 @@
 // pages/index.js
 
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/global.module.css";
+import style from './style.module.css';
 
 type Item = {
     id: number,
@@ -18,22 +19,34 @@ const movies = [
     coverImage: "/images/movie1.jpg",
     backgroundImage: "/images/background1.jpg",
   },
+  {
+    id: 2,
+    title: "Filme 1",
+    description: "Descrição do Filme 1",
+    coverImage: "/images/movie1.jpg",
+    backgroundImage: "/background1.jpg",
+  },
   // Adicione mais filmes conforme necessário
 ];
 
 const MovieItem = ({ movie}:{movie:Item}) => {
   return (
     <Link href={`/libplay/${movie.id}`}>
-      <a className={styles.movieItem}>
+      <div className={styles.movieItem}>
         <div
           className={styles.movieImage}
           style={{ backgroundImage: `url(${movie.coverImage})` }}
-        ></div>
-        <div className={styles.movieInfo}>
+        >
+           
+           <div className={styles.movieInfo}>
           <h3>{movie.title}</h3>
+          
           <p>{movie.description}</p>
         </div>
-      </a>
+          
+        </div>
+       
+      </div>
     </Link>
   );
 };
