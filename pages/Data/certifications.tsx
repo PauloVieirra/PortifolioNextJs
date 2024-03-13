@@ -56,6 +56,13 @@ const Certification = () => {
         imagemFullScreen: './images/wireframe.png',
         url: 'https://www.exemplo.com/item1',
       },
+      {
+        nome: 'Item 1',
+        descricao: 'Descrição do Item 1',
+        icon: './images/acces.png',
+        imagemFullScreen: './images/wireframe.png',
+        url: 'https://app.uxcel.com/certificates/K8OWV4JF60HN',
+      },
      
   ];
 
